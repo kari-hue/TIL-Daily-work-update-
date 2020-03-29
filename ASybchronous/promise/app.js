@@ -6,12 +6,27 @@ const post = [
 
 
 function createPost(p){
-    setTimeout(function(){
-        post.push(p);
-    },2000);
+    return new Promise(function(resolve,reject){
+
+        setTimeout(function(){
+            post.push(p);
+
+            let err = false;
+            if(!err)
+            {
+             resolve();
+            }
+            else
+            {
+                reject("Error: something went wrong");
+            }
+        }, 2000);
+
+    });
+    
 }
 
-function getPost(){
+function getPost() {
 
     setTimeout(function(){
         let output = '';
@@ -25,6 +40,9 @@ function getPost(){
     },1000);
 }
 
-createPost({title: 'post three', body : 'welcome to post 3'});
+createPost({title: 'post three', body : 'welcome to post 3'}).then(getPost)
+.catch(function(err){
+    console.log(err);
+});
+
     
-getPost();
