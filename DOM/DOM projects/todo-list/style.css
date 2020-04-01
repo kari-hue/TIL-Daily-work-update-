@@ -1,0 +1,32 @@
+
+
+body{
+    background: RGB(223, 207, 190);
+    height : 100%;
+    width:25%
+}
+
+.title{
+    margin:10px;
+    color:red;
+}
+
+
+
+#addstuff{
+    padding:0px;
+    margin: 10px;
+
+}
+
+#btn1{
+    padding:0px;
+    margin: 10px;
+}
+
+#btn2{
+    padding:0px;
+    margin: 10px;
+}
+
+

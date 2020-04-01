@@ -45,7 +45,7 @@ document.getElementById("btn1").addEventListener('click',getText);
 document.getElementById("btn2").addEventListener('click',getJson);
 
 
-> 
+```javascript
     function getJson(){
 
     fetch('fetch.json')
@@ -66,6 +66,8 @@ document.getElementById("btn2").addEventListener('click',getJson);
         });
             
         })
+
+```
             
 
 ---
