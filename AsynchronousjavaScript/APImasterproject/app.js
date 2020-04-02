@@ -21,16 +21,22 @@ seacrchUser.addEventListener('keyup',(e) => {
        .then(data => {
            if(data.profile.message ==="Not Found"){
                //show show alert
+               ui.showAlert('user not found','alert alert-danger');
+
            }else{
 
             //showing the profile of the user
             ui.showProfile(data.profile);
+            ui.showRepos(data.repos);
 
            }
        });
 
     }
     else{
+        //clear profile
+
+        ui.clearProfile();
 
     }
 })
