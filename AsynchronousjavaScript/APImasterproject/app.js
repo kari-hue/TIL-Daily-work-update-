@@ -2,6 +2,10 @@
 
 const github = new Github;
 
+//Initialize the ui
+
+const ui = new UI;
+
 
 const seacrchUser = document.getElementById('searchUser');
 
@@ -19,11 +23,14 @@ seacrchUser.addEventListener('keyup',(e) => {
                //show show alert
            }else{
 
+            //showing the profile of the user
+            ui.showProfile(data.profile);
+
            }
        });
 
     }
     else{
-        
+
     }
 })
