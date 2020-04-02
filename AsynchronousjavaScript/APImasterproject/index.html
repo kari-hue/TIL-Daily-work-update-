@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
 </head>
 <body>
@@ -11,12 +12,21 @@
     <nav class = "navbar navbar-dark bg-primary mb-3">
 
         <div class="container">
-            <a href="#" class = "navbar-brand">Github Finder</a>
-        </div>
-        <div class="container searchContainer">
-            
+            <a href="#" class = "navbar-brand">Github User Finder<i class="fas fa-search-dollar"></i>
+                </a>
         </div>
     </nav>
+
+        <div class="container searchContainer">
+            <div class="search card card-body">
+                <h1>Search For Github users</h1>
+             <p class="lead">Enter the name of the user profile that you are looking for</p>
+        <input type="text" id="searchUser" class="form-control" placeholder ="Type the username...">
+          </div>
+          <br>
+            <div id="profile"></div>
+        </div>
+  
 
     <script src ="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
