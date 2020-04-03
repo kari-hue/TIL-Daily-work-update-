@@ -1,10 +1,8 @@
-*{
-    font-family: "Rimouski";
-}
+
 
 body{
     background-color: teal;
-    background-image: url('bg.jpg');
+    
 }
 
 .container{
@@ -75,18 +73,15 @@ body{
     cursor: pointer;
 }
 
-.temperature-value p:hover{
-    
-}
+
 
 .temperature-value span{
     color: #293251;
     font-size: 0.5em;
 }
 
-.temperature-description{
     
-}
+
 
 .temperature-description p{
     padding: 8px;
