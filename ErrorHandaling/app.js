@@ -15,3 +15,5 @@ catch(err){
 }
 
 console.log("The program continues after finishing the error");
+
+console.log("hello");

@@ -42,6 +42,8 @@ const datastore = [
 
 const profiles = profile(datastore);
 //next event
+//call first profile
+nextprofile();
 
 document.getElementById('next').addEventListener('click',nextprofile);
 //describing the next function
@@ -49,6 +51,7 @@ function nextprofile()
 {
 
 const currentProfile = profiles.next().value;
+if(currentProfile !== undefined){
 document.getElementById('profileDisplay').innerHTML = `
 <ul class="list-group">
 <li class="list-group-item">Name: ${currentProfile.Name}</li>
@@ -62,7 +65,10 @@ document.getElementById('profileDisplay').innerHTML = `
 <ul>
 `;
 document.getElementById("imageDisplay").innerHTML = `<img src = "${currentProfile.image}">`;
+} else{
+    window.location.reload();
 
+}
 }
 
 
@@ -73,7 +79,7 @@ function profile(p){
 
     const count = 0;
     return{
-        next: function(){
+        next: function() {
             return count < p.length ? {
                 value: p[count++],done:false
             } :
