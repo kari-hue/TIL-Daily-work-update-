@@ -7,7 +7,7 @@ const datastore = [
         Favfood:"anything that is sweet",
         Favbook: "The kite Runner",
         Favdestination:"I want to visit montecarlo",
-        Image:"ttps://randomuser.me/api/portraits/women/24.jpg"
+        Image:"https://randomuser.me/api/portraits/women/24.jpg"
 },
 { 
     Name : "Anush",
