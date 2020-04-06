@@ -5,9 +5,9 @@
 const itemController = (function(){               //this functions runs immediately
 
     //Let's create an item constructor
-    const item = function(id,name,calories){
+    const Item = function(id,name,calories){
         //with any constructor we got to use this
-        this.is = id;
+        this.id = id;
         this.name = name;
         this.calories = calories;
     }
@@ -24,6 +24,9 @@ const data = {
 
 return{
 
+    getItems: function(){
+        return data.items;
+    },
     //creating a function
     logData : function(){
         return data;
@@ -42,6 +45,25 @@ const uiController = (function(){
 
     return{
 
+
+        populateItemList: function(items){
+
+            let html = '';
+            items.forEach(function(item){
+
+                html+= `<li class="collection-item" id = "item-${item.id}">
+                <strong>${item.name}:</strong><em>${item.calories}:</em>
+             <a href="#" class="secondary-content">
+                 <i class= "edit-item fa fa.pencil"></i>
+             </a>
+            </li>`;
+            });
+
+            //insert list items
+
+            document.getElementById("item-list").innerHTML = html;
+        }
+
     }
 
 })();
@@ -54,7 +76,12 @@ const appController = (function(itemController,uiController){
     //public methods
     return{
         init: function(){         //It will call getItems to get all the items
-            console.log("Initializing things");
+            //Fetching items from the data
+            const items = itemController.getItems();
+            //populate list with items
+
+            uiController.populateItemList(items);
+            
         }
     }
 
