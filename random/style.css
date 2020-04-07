@@ -1,0 +1,28 @@
+body{
+    background-color:turquoise;
+}
+
+.container h1{
+    
+    text-align: center;
+    color: yellow;
+
+}
+#input1 {
+
+    border: 10x solid black;
+    margin: 100px;
+    align-content: center;
+    display: flex;
+    width: 200px;
+    height:50px;
+   
+
+}
+#btn
+{
+    margin: 100px;
+    width:100px;
+    height:50px;
+    
+}

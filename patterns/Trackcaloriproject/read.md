@@ -16,9 +16,20 @@ This project  mainly allows you to keep control of your eating habits. You will 
   
 * itemController
   
-  Item controller
+  Item controller 
   
 * uiController
-  
+
+  controls the working of userInterface. 
+  For e.g.
+  Allows you to input the name of food,calorie related to that food and add display it in your UI
+
 * appController
+ 
+  App controller basically controls the overall app.
+
+  Note: Here we use the concept of modules and these modules work with each other very closely
+
   
+
+

@@ -70,9 +70,9 @@ const StorageCtrl = (function(){
     // Data Structure / State
     const data = {
       // items: [
-      //   // {id: 0, name: 'Steak Dinner', calories: 1200},
-      //   // {id: 1, name: 'Cookie', calories: 400},
-      //   // {id: 2, name: 'Eggs', calories: 300}
+      //   // {id: 0, name: 'Egg', calories: 300},
+      //   // {id: 1, name: 'Bread', calories: 400},
+      //   // {id: 2, name: 'Sphaghetti', calories: 300}
       // ],
       items: StorageCtrl.getItemsFromStorage(),
       currentItem: null,
@@ -244,11 +244,7 @@ const StorageCtrl = (function(){
           }
         });
       },
-      deleteListItem: function(id){
-        const itemID = `#item-${id}`;
-        const item = document.querySelector(itemID);
-        item.remove();
-      },
+     
       clearInput: function(){
         document.querySelector(UISelectors.itemNameInput).value = '';
         document.querySelector(UISelectors.itemCaloriesInput).value = '';
