@@ -71,5 +71,20 @@ or
 import * as (/*any random variable say mod) */ from '//specify name of the js file along with the path from where you want to access the content'
 
 //then access the content you want to access use the random variable 
+```
 
+
+> To create a restful API
+
+//go to your command prompt and create a json server
+
+```sh
+npm install json-server --save
+```
+//It will create a json-server in your package.json file
+
+Now after creating a JSON file you need to run the file in your server
+
+```sh
+npm run json-server
 ```
